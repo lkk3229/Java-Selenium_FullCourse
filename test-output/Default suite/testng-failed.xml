@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="d46_TestNG_Listeners_ExtentReportGeneration.OrangeHRM">
+      <class name="d40_DataDrivenTesting_WorkingWithMS_Excel.LoginTestUsingDataProvider">
         <methods>
-          <include name="testAppUrl"/>
-          <include name="testHomePageTitle"/>
-          <include name="setup"/>
-          <include name="teardown"/>
+          <include name="loginTest"/>
         </methods>
-      </class> <!-- d46_TestNG_Listeners_ExtentReportGeneration.OrangeHRM -->
+      </class> <!-- d40_DataDrivenTesting_WorkingWithMS_Excel.LoginTestUsingDataProvider -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

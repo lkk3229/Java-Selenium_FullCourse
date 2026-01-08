@@ -7,6 +7,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HandleFrames {
 
@@ -51,6 +53,11 @@ public class HandleFrames {
 		js.executeScript("arguments[0].click();", rdbutton);
 		
 		driver.switchTo().defaultContent(); //go back to default frame
+		
+		//using explicit wait
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frame3));
+		
 		
 		driver.close();
 

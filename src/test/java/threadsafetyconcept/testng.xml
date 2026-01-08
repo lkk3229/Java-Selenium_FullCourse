@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+  <test name="Test" thread-count="2" parallel="methods">
+    <classes>
+     <!-- <class name="threadsafetyconcept.DriverTest1"/> -->
+      <class name="threadsafetyconcept.DriverTest2"/>
+      <methods>
+        <include name="mytest1"/>
+        <include name="mytest2"/>
+       </methods>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

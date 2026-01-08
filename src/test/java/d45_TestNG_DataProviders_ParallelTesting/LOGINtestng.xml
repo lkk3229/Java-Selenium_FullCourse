@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" data-provider-thread-count="2">
+  <test name="Test">
+    <classes>
+      <class name="d45_TestNG_DataProviders_ParallelTesting.LoginTestUsingDataProvider"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
